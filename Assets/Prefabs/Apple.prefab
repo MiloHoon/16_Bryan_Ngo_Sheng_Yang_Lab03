@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7102251068751694037}
   - component: {fileID: 3102895891193010865}
-  - component: {fileID: 4858788930253998642}
   - component: {fileID: 4072267333307905634}
+  - component: {fileID: 4858788930253998642}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Healthy
@@ -83,18 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4858788930253998642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4017666735278695077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc78e0686fc074da08b21203d9088b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &4072267333307905634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -108,3 +96,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.5, y: 16.5, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4858788930253998642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4017666735278695077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc78e0686fc074da08b21203d9088b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
