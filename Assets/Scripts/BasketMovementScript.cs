@@ -18,18 +18,18 @@ public class BasketMovementScript : MonoBehaviour
         Movement();
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Healthy")
+        if (other.gameObject.tag == "Healthy")
         {
             GameManager.instance.AddScore();
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
 
-        if (collision.gameObject.tag == "Unhealthy")
+        if (other.gameObject.tag == "Unhealthy")
         {
             GameManager.instance.MinusScore();
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
     }
 
