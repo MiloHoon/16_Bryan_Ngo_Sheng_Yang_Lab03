@@ -6,6 +6,8 @@ public class BasketMovementScript : MonoBehaviour
 {
     public float speed;
 
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +26,14 @@ public class BasketMovementScript : MonoBehaviour
         {
             GameManager.instance.AddScore();
             Destroy(other.gameObject);
+            audioSource.Play();
         }
 
         if (other.gameObject.tag == "Unhealthy")
         {
             GameManager.instance.MinusScore();
             Destroy(other.gameObject);
+            audioSource.Play();
         }
     }
 
