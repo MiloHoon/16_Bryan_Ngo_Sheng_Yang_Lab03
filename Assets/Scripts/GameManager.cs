@@ -41,6 +41,6 @@ public class GameManager : MonoBehaviour
 
     public void MinusScore()
     {
-        //SceneManager.LoadScene("LoseScene");
+        //SceneManager.LoadScene("GameLoseScene");
     }
 }
