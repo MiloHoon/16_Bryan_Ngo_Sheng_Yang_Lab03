@@ -37,6 +37,11 @@ public class GameManager : MonoBehaviour
         
         // Display Updated Score 
         scoreText.text = "Score: " + currentScore;
+
+        if (currentScore == 100)
+        {
+            SceneManager.LoadScene("GameWinScene");
+        }
     }
 
     public void MinusScore()
